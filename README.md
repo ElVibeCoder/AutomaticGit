@@ -21,9 +21,8 @@ Asegúrate de tener esto instalado en tu computadora:
 
 - ✅ [Python 3.12+](https://www.python.org/downloads/)
 - ✅ `pip` funcionando
-- ✅ Una cuenta de [GitHub](https://github.com)
 - ✅ Un repositorio propio (como `UploadDaily`)
-- ✅ Un **token personal de GitHub** con permisos para ese repo (ver más abajo)
+- ✅ Un **token personal de GitHub** con permisos para ese repo (classic, repo)
 
 ---
 
@@ -34,3 +33,11 @@ Asegúrate de tener esto instalado en tu computadora:
 ```bash
 git clone https://github.com/Hakired/UploadDaily.git
 cd UploadDaily
+
+### 2. Instala los paquetes necesarios
+
+- ✅ pip install flask PyGithub schedule
+
+
+### 3. Edita el app.py para añadir el Token y Ejecuta la app
+- ✅ python auto_upload.py
