@@ -41,3 +41,17 @@ cd UploadDaily
 
 ### 3. Edita el app.py para añadir el Token y Ejecuta la app
 - ✅ python auto_upload.py
+
+🚀 Añadirlo al inicio automático de Windows
+
+    Presiona Win + R
+
+    Escribe shell:startup y presiona Enter
+
+    Copia tu iniciar_auto_upload.bat en esa carpeta
+
+Genera el .bat así
+@echo off
+cd /d "AutomaticGit Folder Here"
+python auto_upload.py
+
