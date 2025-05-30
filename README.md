@@ -1,80 +1,40 @@
-# 📤 UploadDaily — App para Subir Archivos a GitHub Automáticamente
+# 📤 UploadDaily — App to Automatically Upload Files to GitHub
 
-Bienvenido/a. Este proyecto te permite subir un archivo `readme.txt` a tu repositorio de GitHub con una app web muy simple hecha en Flask, y además automatizar esa subida para que se haga una vez al día sin que tengas que intervenir.
+Welcome! This project allows you to upload a `readme.txt` file to your GitHub repository through a very simple web app made with Flask, and also automate this upload to happen once a day without your intervention.
 
-Ideal para aprender a integrar Python + GitHub + automatización.
-
----
-
-## 🎯 ¿Qué hace esta app?
-
-- Muestra una página web donde puedes subir un archivo `.txt`
-- El archivo se sube automáticamente a la carpeta `txt/` de tu repositorio en GitHub
-- Si el archivo ya existe, lo actualiza
-- Incluye un script automático para hacer el upload **una vez al día** sin abrir el navegador
+Ideal for learning how to integrate Python + GitHub + automation.
 
 ---
 
-## 🧰 Requisitos
+## 🎯 What does this app do?
 
-Asegúrate de tener esto instalado en tu computadora:
+- Shows a web page where you can upload a `.txt` file.
+- The file is automatically uploaded to the `txt/` folder of your GitHub repository.
+- If the file already exists, it updates it.
+- Includes an automatic script to perform the upload **once a day** without opening the browser.
+
+---
+
+## 🧰 Requirements
+
+Make sure you have installed on your computer:
 
 - ✅ [Python 3.12+](https://www.python.org/downloads/)
-- ✅ `pip` funcionando
-- ✅ Un repositorio propio (como `UploadDaily`)
-- ✅ Un **token personal de GitHub** con permisos para ese repo (classic, repo)
+- ✅ Working `pip`
+- ✅ Your own GitHub repository (for example: `UploadDaily`)
+- ✅ A **personal GitHub token** with access permissions to that repository (classic token with `repo` permission)
 
 ---
 
-## 🛠 Instalación paso a paso
+## 🛠 Step-by-step installation
 
-### 1. Clona el repositorio (o crea una carpeta)
+## 📝 Summary
 
-```bash
-git clone https://github.com/git clone https://github.com/Pepehige/UploadDaily.git
-cd UploadDaily
-
-### 2. Instala los paquetes necesarios
-
-- ✅ pip install flask PyGithub schedule
-
-
-### 3. Edita el app.py para añadir el Token y Ejecuta la app
-- ✅ python auto_upload.py
-
-🚀 Añadirlo al inicio automático de Windows
-
-    Presiona Win + R
-
-    Escribe shell:startup y presiona Enter
-
-    Copia tu iniciar_auto_upload.bat en esa carpeta
-
-Genera el .bat así
-@echo off
-cd /d "AutomaticGit Folder Here"
-python auto_upload.py
-/UploadDaily.git
-cd UploadDaily
-
-### 2. Instala los paquetes necesarios
-
-- ✅ pip install flask PyGithub schedule
-
-
-### 3. Edita el app.py para añadir el Token y Ejecuta la app
-- ✅ python auto_upload.py
-
-🚀 Añadirlo al inicio automático de Windows
-
-    Presiona Win + R
-
-    Escribe shell:startup y presiona Enter
-
-    Copia tu iniciar_auto_upload.bat en esa carpeta
-
-Genera el .bat así
-@echo off
-cd /d "AutomaticGit Folder Here"
-python auto_upload.py
+| Step                 | Command / Action                                  |
+|----------------------|-------------------------------------------------|
+| Clone repo           | `git clone https://github.com/Pepehige/UploadDaily.git` |
+| Install dependencies | `pip install flask PyGithub schedule`            |
+| Run web app          | `python app.py`                                  |
+| Run daily upload     | `python auto_upload.py`                          |
+| Auto start on Windows| Create a `.bat` file and copy it to the `shell:startup` folder |
 
