@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>UploadDaily</title>
+</head>
+<body>
+    <h1>Sube tu archivo readme.txt a GitHub</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li style="color: {% if category == 'success' %}green{% else %}red{% endif %};">
+              {{ message }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt" />
+        <button type="submit">Subir a GitHub</button>
+    </form>
+</body>
+</html>
