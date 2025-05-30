@@ -31,7 +31,30 @@ Asegúrate de tener esto instalado en tu computadora:
 ### 1. Clona el repositorio (o crea una carpeta)
 
 ```bash
-git clone https://github.com/Hakired/UploadDaily.git
+git clone https://github.com/git clone https://github.com/Pepehige/UploadDaily.git
+cd UploadDaily
+
+### 2. Instala los paquetes necesarios
+
+- ✅ pip install flask PyGithub schedule
+
+
+### 3. Edita el app.py para añadir el Token y Ejecuta la app
+- ✅ python auto_upload.py
+
+🚀 Añadirlo al inicio automático de Windows
+
+    Presiona Win + R
+
+    Escribe shell:startup y presiona Enter
+
+    Copia tu iniciar_auto_upload.bat en esa carpeta
+
+Genera el .bat así
+@echo off
+cd /d "AutomaticGit Folder Here"
+python auto_upload.py
+/UploadDaily.git
 cd UploadDaily
 
 ### 2. Instala los paquetes necesarios
