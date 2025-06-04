@@ -7,7 +7,7 @@ app.secret_key = 'MiClaveSuperSecreta123!'  # Puedes cambiarla
 
 # CONFIGURA ESTO:
 GITHUB_TOKEN = 'tu_token_aqui'  # <-- pon aquí tu token de GitHub
-REPO_NAME = 'Pepehige/UploadDaily'
+REPO_NAME = 'Usuario/carpeta'
 BRANCH = 'main'
 
 g = Github(GITHUB_TOKEN)
