@@ -3,7 +3,7 @@ import time
 from github import Github
 
 GITHUB_TOKEN = 'tu_token'
-REPO_NAME = 'Pepehige/UploadDaily'
+REPO_NAME = 'Usuario/Carpeta'
 BRANCH = 'main'
 PATH_LOCAL = 'txt/readme.txt'
 
